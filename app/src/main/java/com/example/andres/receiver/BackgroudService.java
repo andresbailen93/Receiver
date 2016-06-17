@@ -14,6 +14,11 @@ public class BackgroudService extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.e("RECEICER","Recibido el intent ");
+        if(intent.getAction().equals("pulsador 1")) {
+            Log.e("RECEIVER", intent.getAction());
+        }
+        if(intent.getAction().equals("pulsador 2")) {
+            Log.e("RECEIVER", intent.getAction());
+        }
     }
 }
